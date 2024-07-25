@@ -14,7 +14,7 @@ export default class EVCar extends Car {
     this._range = x;
   }
 
-  inherCar() {
+  cloneCar() {
     const Z = super.constructor[Symbol.y];
 
     return new Z();

@@ -6,8 +6,17 @@ export default class EVCar extends Car {
     this._range = range;
   }
 
-  // static fun for re data
-  static get [Symbol.y]() {
-    return Car;
+  get range() {
+    return this._range;
+  }
+
+  set range(x) {
+    this._range = x;
+  }
+
+  inherCar() {
+    const Z = super.constructor[Symbol.y];
+
+    return new Z();
   }
 }

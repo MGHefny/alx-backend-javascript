@@ -2,11 +2,11 @@ export default class HolbertonClass {
   constructor(size, location) {
     // err masseg size
     if (typeof size !== 'number') {
-      throw new TypeError('Size must be a number');
+      throw new TypeError('err Size must be a number');
     }
     // err masseg location
     if (typeof location !== 'string') {
-      throw new TypeError('Location must be a string');
+      throw new TypeError('err Location must be a string');
     }
     this._size = size;
     this._location = location;

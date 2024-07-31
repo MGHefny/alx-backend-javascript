@@ -2,8 +2,8 @@ export const cpp: Subjects.CppClass = new Subjects.CppClass();
 export const java: Subjects.JavaClass = new Subjects.JavaClass();
 export const react: Subjects.ReactClass = new Subjects.ReactClass();
 export const cTeacher: Subjects.Teacher = {
-  firstName: 'Dennis',
-  lastName: 'Ritchie',
+  firstName: 'mohamed',
+  lastName: 'hefny',
   experienceTeachingC: 10,
 };
 

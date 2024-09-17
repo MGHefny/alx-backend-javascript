@@ -6,10 +6,10 @@ const http = require('http');
 const hostname = 'localhost';
 const port = 1245;
 
-const run = http.createServer((reseve, send) => {
-  send.statusCode = 200;
-  send.setHeader('Content-Type', 'text/plain');
-  send.end('Hello Holberton School!');
+const run = http.createServer((reseve, req) => {
+  req.statusCode = 200;
+  req.setHeader('Content-Type', 'text/plain');
+  req.end('Hello Holberton School!');
 });
 
 run.listen(port, hostname, () => {

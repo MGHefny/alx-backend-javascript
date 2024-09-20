@@ -1,6 +1,6 @@
 /* expect */
 const assert = require('assert');
-const calculateNumber = require('./1-calcul');
+const calculateNumber = require('./2-calcul_chai');
 
 describe('calculateNumber', () => {
   describe('type == "SUM"', () => {

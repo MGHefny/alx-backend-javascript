@@ -4,19 +4,19 @@ const calculateNumber = require('./1-calcul');
 
 describe('calculateNumber', () => {
   describe('type == "SUM"', () => {
-    it('equal positive numbers', () => {
+    it('the positive numbers', () => {
       assert.strictEqual(calculateNumber('SUM', 2.0, 2.0), 4);
     });
 
-    it('equal positive numbers (alternate)', () => {
+    it('the positive numbers (alternate)', () => {
       assert.strictEqual(calculateNumber('SUM', 2.3, 1.8), 4);
     });
 
-    it('equal negative numbers', () => {
+    it('the negative numbers', () => {
       assert.strictEqual(calculateNumber('SUM', -2.0, -2.0), -4);
     });
 
-    it('equal negative numbers (alternate)', () => {
+    it('the negative numbers (alternate)', () => {
       assert.strictEqual(calculateNumber('SUM', -2.3, -1.8), -4);
     });
 
@@ -34,19 +34,19 @@ describe('calculateNumber', () => {
   });
 
   describe('type == "SUBTRACT"', () => {
-    it('equal positive numbers', () => {
+    it('the positive numbers', () => {
       assert.strictEqual(calculateNumber('SUBTRACT', 2.0, 2.0), 0);
     });
 
-    it('equal positive numbers (alternate)', () => {
+    it('the positive numbers (alternate)', () => {
       assert.strictEqual(calculateNumber('SUBTRACT', 2.3, 1.8), 0);
     });
 
-    it('equal negative numbers', () => {
+    it('the negative numbers', () => {
       assert.strictEqual(calculateNumber('SUBTRACT', -2.0, -2.0), 0);
     });
 
-    it('equal negative numbers (alternate)', () => {
+    it('the negative numbers (alternate)', () => {
       assert.strictEqual(calculateNumber('SUBTRACT', -2.3, -1.8), 0);
     });
 
@@ -80,19 +80,19 @@ describe('calculateNumber', () => {
       assert.strictEqual(calculateNumber('DIVIDE', -7.0, -2.0), 3.5);
     });
 
-    it('equal positive numbers', () => {
+    it('the positive numbers', () => {
       assert.strictEqual(calculateNumber('DIVIDE', 2.0, 2.0), 1);
     });
 
-    it('equal negative numbers', () => {
+    it('the negative numbers', () => {
       assert.strictEqual(calculateNumber('DIVIDE', -2.0, -2.0), 1);
     });
 
-    it('equal rounded up numbers', () => {
+    it('the rounded up numbers', () => {
       assert.strictEqual(calculateNumber('DIVIDE', 2.6, 3.0), 1);
     });
 
-    it('equal rounded down numbers', () => {
+    it('the rounded down numbers', () => {
       assert.strictEqual(calculateNumber('DIVIDE', 2.4, 2.0), 1);
     });
 
